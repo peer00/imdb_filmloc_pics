@@ -1,0 +1,26 @@
+ok1
+ok2
+ok3
+route initialized
+listening on port 3000!
+ok4
+ok5
+6 9
+ok5
+6 32
+ok5
+6 14
+ok5
+6 32
+ok5
+6 19
+ok5
+6 32
+ok5
+6 13
+ok5
+6 32
+ok5
+6 13
+ok5
+6 32

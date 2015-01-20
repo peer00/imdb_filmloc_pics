@@ -1,0 +1,15 @@
+<html>
+<body>
+
+<% if (omdb_movies.length > 0) { %>
+
+  <% omdb_movies.forEach(function(movie) { %>
+    <% if (movie.Poster !== undefined && movie.Poster !== "N/A" ) { %>
+      <img src=<%= movie.Poster %> height=200px > </img>
+    <% } %>
+  <% }) %>
+
+<% } %>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<h2>Please type in your first name, last name and email address</h2>
+
+<form action="/add" method="post">
+  <input type="text" name="first">
+  <input type="text" name="last">
+  <input type="text" name="email">
+  <input type="submit" value="Add">
+</form>
+
+<% if (array.length > 0) { %>
+<ul>
+  <% array.forEach(function(person) { %>
+    <li>My name is <%=person.first%> <%=person.last%>. You can reach me at <%=person.email%></li>
+  <% }) %>
+</ul>
+<% } %>
+
+</body>
+</html>

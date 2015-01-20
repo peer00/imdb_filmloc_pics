@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+  var httpGet = function(url) {
+    var xmlHttp = null;
+
+    xmlHttp = new XMLHttpRequest();
+
+    xmlHttp.open( "GET", url, true );
+    xmlHttp.send( null );
+
+    return xmlHttp.responseText;
+  }
+
+  var obj = JSON.parse(httpGet("http://omdbapi.com/?t=Top%20Gun"));
+
+  console.log(obj)
+
+</script>
+
+</body>
+</html>

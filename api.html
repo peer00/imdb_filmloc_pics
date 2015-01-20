@@ -1,0 +1,40 @@
+<html>
+<body>
+  <p>
+    <input type="text" id="movie">
+    <input type="submit" value="Submit" id="submit">
+  <br>
+  </p>
+
+  <script>
+
+  var func = function() {
+    var movie = document.getElementById("movie")
+    var url = "http://omdbapi.com?t=" + encodeURI(movie.value)
+    var xhr = null;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+
+    xhr.addEventListener('load', function(e) {
+      res = JSON.parse(xhr.responseText)
+      console.log(res)
+
+      var p = document.querySelector("p")
+      var img = document.createElement("img")
+      var output = (res.Poster)
+      img.src = output
+      p.appendChild(img)
+
+    });
+    xhr.send();
+
+  }
+
+  var input = document.getElementById("submit");
+  input.addEventListener("click", func);
+
+  </script>
+
+
+</body>
+</html>

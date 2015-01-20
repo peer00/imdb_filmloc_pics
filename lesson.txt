@@ -1,0 +1,14 @@
+in Express:
+
+req.params.name
+
+neemt parameter uit de link zoals:
+/add/:name  e.g. /add/joel
+
+req.query.name
+
+/add  /add?name=joel&age=30
+
+req.body.name
+
+is de variabele IN de EJS document.

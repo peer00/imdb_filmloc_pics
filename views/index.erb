@@ -1,0 +1,13 @@
+<html>
+<body>
+
+<% if moviesObjects.length > 0 %>
+  <%  for object in moviesObjects %>
+    <%  for pics in object[0]["picsArray"] %>
+      <img src=<%= pics %>></img>
+    <% end %>
+  <% end %>
+<% end %>
+
+</body>
+</html>
